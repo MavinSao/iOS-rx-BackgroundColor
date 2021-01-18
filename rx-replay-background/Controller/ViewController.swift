@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
+    let disposedBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,7 +22,7 @@ class ViewController: UIViewController {
         var settingVC = self.tabBarController?.viewControllers![3] as! SettingViewController
         settingVC.colorObserver.subscribe(onNext: { [weak self] color in
             self?.view.backgroundColor = color
-        })
+        }).disposed(by: disposedBag)
     }
 
 

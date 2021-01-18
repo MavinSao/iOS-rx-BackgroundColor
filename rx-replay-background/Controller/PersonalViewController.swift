@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class PersonalViewController: UIViewController {
 
+    let disposedBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +24,7 @@ class PersonalViewController: UIViewController {
         
         settingVC.colorObserver.subscribe(onNext: { [weak self] color in
             self?.view.backgroundColor = color
-        })
+        }).disposed(by: disposedBag)
         
     }
     

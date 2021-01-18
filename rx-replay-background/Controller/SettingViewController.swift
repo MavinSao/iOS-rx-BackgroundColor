@@ -14,6 +14,8 @@ class SettingViewController: UIViewController {
     var colorObserver : Observable<UIColor> {
         return colorSubject.asObservable()
     }
+    
+    let disposedBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,7 @@ class SettingViewController: UIViewController {
         colorObserver.subscribe(onNext: { [weak self] color in
             print("work fine")
             self?.view.backgroundColor = color
-        })
+        }).disposed(by: disposedBag)
         
     }
     
