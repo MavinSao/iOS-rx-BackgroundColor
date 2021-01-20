@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2A07939E70C0FF6167F7C383 /* Pods_rx_replay_background.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D4366993FFA5FF3D149911 /* Pods_rx_replay_background.framework */; };
+		8417FCD425B671F6005014DB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417FCD325B671F6005014DB /* NewsTableViewCell.swift */; };
+		8417FCD925B6730D005014DB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417FCD825B6730D005014DB /* Article.swift */; };
+		8417FCE325B7C115005014DB /* URLResquest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8417FCE225B7C115005014DB /* URLResquest+Extensions.swift */; };
 		84CC9FAA25B54A1400A1A6A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC9FA925B54A1400A1A6A3 /* AppDelegate.swift */; };
 		84CC9FAC25B54A1400A1A6A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC9FAB25B54A1400A1A6A3 /* SceneDelegate.swift */; };
 		84CC9FAE25B54A1400A1A6A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CC9FAD25B54A1400A1A6A3 /* ViewController.swift */; };
@@ -21,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8417FCD325B671F6005014DB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		8417FCD825B6730D005014DB /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		8417FCE225B7C115005014DB /* URLResquest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLResquest+Extensions.swift"; sourceTree = "<group>"; };
 		84CC9FA625B54A1400A1A6A3 /* rx-replay-background.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rx-replay-background.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CC9FA925B54A1400A1A6A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84CC9FAB25B54A1400A1A6A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +65,30 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8417FCD225B671DC005014DB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8417FCD325B671F6005014DB /* NewsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8417FCD725B672E5005014DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8417FCD825B6730D005014DB /* Article.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8417FCE125B7C0FA005014DB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8417FCE225B7C115005014DB /* URLResquest+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		84CC9F9D25B54A1400A1A6A3 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +110,8 @@
 		84CC9FA825B54A1400A1A6A3 /* rx-replay-background */ = {
 			isa = PBXGroup;
 			children = (
+				8417FCE125B7C0FA005014DB /* Extensions */,
+				8417FCD725B672E5005014DB /* Model */,
 				84CC9FD625B5710300A1A6A3 /* Service */,
 				84CC9FC325B568C500A1A6A3 /* Controller */,
 				84CC9FC425B568D900A1A6A3 /* App Delegate */,
@@ -93,6 +125,7 @@
 		84CC9FC325B568C500A1A6A3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8417FCD225B671DC005014DB /* Cell */,
 				84CC9FAD25B54A1400A1A6A3 /* ViewController.swift */,
 				84CC9FC925B5694F00A1A6A3 /* NotificationViewController.swift */,
 				84CC9FCC25B5698A00A1A6A3 /* PersonalViewController.swift */,
@@ -258,7 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CC9FAE25B54A1400A1A6A3 /* ViewController.swift in Sources */,
+				8417FCE325B7C115005014DB /* URLResquest+Extensions.swift in Sources */,
 				84CC9FD825B5711300A1A6A3 /* Service.swift in Sources */,
+				8417FCD925B6730D005014DB /* Article.swift in Sources */,
+				8417FCD425B671F6005014DB /* NewsTableViewCell.swift in Sources */,
 				84CC9FCD25B5698A00A1A6A3 /* PersonalViewController.swift in Sources */,
 				84CC9FAA25B54A1400A1A6A3 /* AppDelegate.swift in Sources */,
 				84CC9FCA25B5694F00A1A6A3 /* NotificationViewController.swift in Sources */,
